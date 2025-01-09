@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Bootcamp Enero 2025</h1>
+        <nav id="navbar" class="navbar">
+            <ul class="nb-ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="tabla.html">Tabla</a></li>
+                <li><a href="grid.html">Grid</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="separador"></div>
+
+    <div class="grid-container">
+        <div class="d-left">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias libero blanditiis neque voluptate molestias. Labore vitae voluptatibus distinctio velit earum sunt, mollitia repudiandae, doloremque repellendus asperiores, tempora illum nulla laborum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel magnam illum culpa perferendis harum itaque, laudantium placeat consequuntur nobis fugiat deserunt impedit nam quae sit neque officiis maxime! Qui, accusamus.</p>
+        </div>
+        <div class="d-main">
+            <div class="img-gallery">
+                <div class="img-box">
+                    <picture>
+                        <source srcset="https://placehold.co/150x100" media="(min-width: 600px)" />
+                        <source srcset="https://placehold.co/200x100" media="(min-width: 1024px)" />
+                        <img src="https://placehold.co/100x50" alt="Foto1">
+                    </picture>
+                </div>
+                <div class="img-box">
+                    <picture>
+                        <source srcset="https://placehold.co/150x100" media="(min-width: 600px)" />
+                        <source srcset="https://placehold.co/200x100" media="(min-width: 1024px)" />
+                        <img src="https://placehold.co/100x50" alt="Foto2">
+                    </picture>
+                </div>
+                <div class="img-box">
+                    <picture>
+                        <source srcset="https://placehold.co/150x100" media="(min-width: 600px)" />
+                        <source srcset="https://placehold.co/200x100" media="(min-width: 800px)" />
+                        <img src="https://placehold.co/100x50" alt="Foto3">
+                    </picture>
+                </div>
+                <div class="img-box">
+                    <picture>
+                        <source srcset="https://placehold.co/150x100" media="(min-width: 600px)" />
+                        <source srcset="https://placehold.co/200x100" media="(min-width: 800px)" />
+                        <img src="https://placehold.co/100x50" alt="Foto4">
+                    </picture>
+                </div>
+                <div class="img-box">
+                    <picture>
+                        <source srcset="https://placehold.co/150x100" media="(min-width: 600px)" />
+                        <source srcset="https://placehold.co/200x100" media="(min-width: 800px)" />
+                        <img src="https://placehold.co/100x50" alt="Foto5">
+                    </picture>
+                </div>
+                <div class="img-box">
+                    <picture>
+                        <source srcset="https://placehold.co/150x100" media="(min-width: 600px)" />
+                        <source srcset="https://placehold.co/200x100" media="(min-width: 800px)" />
+                        <img src="https://placehold.co/100x50" alt="Foto6">
+                    </picture>
+                </div>
+                <div class="img-box">
+                    <picture>
+                        <source srcset="https://placehold.co/150x100" media="(min-width: 600px)" />
+                        <source srcset="https://placehold.co/200x100" media="(min-width: 800px)" />
+                        <img src="https://placehold.co/100x50" alt="Foto7">
+                    </picture>
+                </div>
+                <div class="img-box">
+                    <picture>
+                        <source srcset="https://placehold.co/150x100" media="(min-width: 600px)" />
+                        <source srcset="https://placehold.co/200x100" media="(min-width: 800px)" />
+                        <img src="https://placehold.co/100x50" alt="Foto8">
+                    </picture>
+                </div>
+                <div class="img-box">
+                    <picture>
+                        <source srcset="https://placehold.co/150x100" media="(min-width: 600px)" />
+                        <source srcset="https://placehold.co/200x100" media="(min-width: 800px)" />
+                        <img src="https://placehold.co/100x50" alt="Foto9">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div class="d-right">
+            <div class="d-form-reg">
+                <form class="form-reg" action="#">
+                    <fieldset>
+                        <legend>Registro de usuario</legend>
+                        <div class="form-row">
+                            <label for="username">Nombre de usuario</label>
+                            <input type="text" id="username" name="username" />
+                        </div>
+    
+                        <div class="form-row">
+                            <label for="pwd">Password</label>
+                            <input type="password" id="pwd" name="pwd" />
+                        </div>
+    
+                        <div class="form-row">
+                            <label for="como">Como nos conociste:</label>
+                            <textarea name="como" id="como" rows="5"></textarea>
+                        </div>
+                        <div class="form-btn">
+                            <button class="reg-btn" type="submit">Enviar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="d-bottom">
+            <div class="table-container">
+                <table class="eq-table">
+                    <caption>Grupos de trabajo Enero 2025</caption>
+                    <thead>
+                        <tr>
+                            <th>Equipo Alpha</th>
+                            <th>Equipo Bravo</th>
+                            <th>Equipo Charly</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bryan</td>
+                            <td>Carlos</td>
+                            <td>Julen</td>
+                        </tr>
+                        <tr>
+                            <td>Costantina</td>
+                            <td>Alberto</td>
+                            <td>Javi</td>
+                        </tr>
+                        <tr>
+                            <td>J. Ramon</td>
+                            <td>Clara</td>
+                            <td>Carmen</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="separador"></div>
+
+    <footer>
+        <p>Accede a <a href="http://neoland.es" target="_blank" >Neoland</a>.</p>
+    </footer>
+    
+</body>
+</html>
