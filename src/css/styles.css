@@ -262,6 +262,7 @@ footer a {
     display: none;
 }
 
+/* MEDIA 768 */
 @media only screen and (min-width: 768px) {
     .d-left {
         grid-column: 1 /-1;
@@ -280,6 +281,7 @@ footer a {
     }
 }
 
+/* MEDIA 1024 */
 @media only screen and (min-width: 1024px) {
     .grid-container {
         grid-template-rows: repeat(4, 1fr);
