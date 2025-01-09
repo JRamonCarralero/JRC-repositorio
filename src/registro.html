@@ -4,43 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Registro de usuario</h1>
-        <nav>
-            <ul>
+    <header class="main-header">
+        <h1>Bootcamp Enero 2025</h1>
+        <nav id="navbar" class="navbar">
+            <ul class="nb-ul">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="registro.html">Registro</a></li>
                 <li><a href="tabla.html">Tabla</a></li>
             </ul>
         </nav>
     </header>
+
+    <div class="separador"></div>
     
     <section id="registro">
-        <form action="pagina2.html">
-            <fieldset>
-                <legend>Registro de usuario</legend>
-                <div>
-                    <label for="username">Nombre de usuario</label>
-                    <input type="text" id="username" name="username" />
-                </div>
+        <div class="d-form-reg">
+            <form class="form-reg" action="#">
+                <fieldset>
+                    <legend>Registro de usuario</legend>
+                    <div class="form-row">
+                        <label for="username">Nombre de usuario</label>
+                        <input type="text" id="username" name="username" />
+                    </div>
 
-                <div>
-                    <label for="pwd">Password</label>
-                    <input type="password" id="pwd" name="pwd" />
-                </div>
+                    <div class="form-row">
+                        <label for="pwd">Password</label>
+                        <input type="password" id="pwd" name="pwd" />
+                    </div>
 
-                <div>
-                    <label for="como">Como nos conociste:</label>
-                    <textarea name="como" id="como" rows="5" cols="50"></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </fieldset>
-        </form>
+                    <div class="form-row">
+                        <label for="como">Como nos conociste:</label>
+                        <textarea name="como" id="como" rows="5"></textarea>
+                    </div>
+                    <div class="form-btn">
+                        <button class="reg-btn" type="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
      </section>
 
-     <hr />
+     <div class="separador"></div>
  
      <footer>
          <p>Accede a <a href="http://neoland.es" target="_blank" >Neoland</a>.</p>
