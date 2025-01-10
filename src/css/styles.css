@@ -4,11 +4,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color-gray: rgb(160, 157, 173);
+    --width-max: 100%;
+    --cursor-pointer: pointer;
+}
+
 /* HEADER */
 .main-header {
-    width: 100%;
+    width: var(--width-max);
     height: 90px;
-    background-color: rgb(160, 157, 173);
+    background-color: var(--bg-color-gray);
     padding: 15px;
     position: fixed;
 }
@@ -24,7 +30,7 @@ a {
 
 a:hover {
     font-size: 1.3em;
-    cursor: pointer;
+    cursor: var(--cursor-pointer);
     color: yellow;
 }
 
@@ -70,7 +76,7 @@ a:hover {
 }
 
 .img1 {
-    width: 100%;
+    width: var(--width-max);
     box-shadow: 10px 5px 5px rgb(51, 51, 51);
 }
 
@@ -123,7 +129,7 @@ button {
 }
 
 button:hover {
-    cursor: pointer;
+    cursor: var(--cursor-pointer);
 }
 
 .anc-button {
@@ -139,7 +145,7 @@ button:hover {
 }
 
 .eq-table {
-    width: 100%;
+    width: var(--width-max);
     border-collapse: collapse;
 }
 
@@ -171,9 +177,9 @@ button:hover {
 
 /* FOOTER */
 footer {
-    width: 100%;
+    width: var(--width-max);
     height: 50px;
-    background-color: rgb(160, 157, 173);
+    background-color: var(--bg-color-gray);
     position: fixed;
     bottom: 0;
     display: flex;
@@ -196,7 +202,7 @@ footer a {
 }
 
 .form-row {
-    width: 100%;
+    width: var(--width-max);
 }
 
 .form-row label {
@@ -204,11 +210,11 @@ footer a {
 }
 
 .form-row input {
-    width: 100%;
+    width: var(--width-max);
 }
 
 .form-row textarea {
-    width: 100%;
+    width: var(--width-max);
 }
 
 .form-btn {
