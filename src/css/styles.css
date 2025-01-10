@@ -321,6 +321,7 @@ footer a {
     border: 2px solid black;
     margin: 15px auto;
     display: none;
+    overflow: hidden;
 }
 
 .pelota {
