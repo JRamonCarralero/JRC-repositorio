@@ -338,16 +338,16 @@ footer a {
         transform: translate(0px);
     }
     25% {
-        transform: translate(645px, 145px);
+        transform: translate(648px, 148px);
         background-color: blue;
     }
     50% {
-        transform: translate(645px, 0px);
+        transform: translate(648px, 0px);
         background-color: yellow;
         border-radius: 0%;
     }
     75% {
-        transform: translate(0px, 145px);
+        transform: translate(0px, 148px);
         background-color: green;
     }
     100% {
