@@ -344,6 +344,7 @@ footer a {
     50% {
         transform: translate(645px, 0px);
         background-color: yellow;
+        border-radius: 0%;
     }
     75% {
         transform: translate(0px, 145px);
@@ -352,6 +353,7 @@ footer a {
     100% {
         transform: translate(0px, 0px);
         background-color: red;
+        border-radius: 100%;
     }
 }
 
