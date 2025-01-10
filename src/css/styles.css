@@ -107,12 +107,13 @@ h2 {
 
 .list-container {
     width: 70%;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .form-container {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto;
+    max-width: 900px;
 }
 
 fieldset {
@@ -141,6 +142,7 @@ button:hover {
 .table-container {
     width: 80%;
     min-width: 300px;
+    max-width: 900px;
     margin: 15px auto;
 }
 
@@ -198,6 +200,7 @@ footer a {
 /* PAGINA REGISTRO */
 .d-form-reg {
     width: 90%;
+    max-width: 900px;
     margin: 15px auto;
 }
 
@@ -232,6 +235,7 @@ footer a {
 .img-gallery {
     width: 90%;
     min-width: 200px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
