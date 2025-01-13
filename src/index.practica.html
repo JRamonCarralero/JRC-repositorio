@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de la compra</title>
+    <link rel="stylesheet" href="css/styles-practica.css">
+    <link rel="stylesheet" href="css/styles-practica.mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="css/styles-practica.desktop.css" media="screen and (min-width: 769px)">
+</head>
+<body>
+    <header class="main-hdr">
+        <h1>Lista de la compra</h1>
+    </header>
+    <main class="main-container">
+        <div class="main-content">
+            <div class="form-container">
+                <fieldset>
+                    <legend>Añadir a la lista</legend>
+                    <form>
+                        <div class="add-list-form">                        
+                            <input type="text" name="item" id="item" placeholder="artículo" />
+                            <input type="number" name="qty" id="qty" placeholder="cantidad" />
+                            <input type="number" name="price" id="price" placeholder="precio" />
+                            <button type="button" id="add-btn" onclick="addItem()">Añadir</button>
+                        </div>
+                        <div class="clear-list-cont">
+                            <button type="reset" id="reset-btn" onclick="clearList()">Nueva lista de la compra</button>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+            <div class="list-container">
+                <table id="list-table" class="list-table">
+                    <thead>
+                        <tr class="bb2">
+                            <th>Artículo</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="list-tbody">
+                        <!--<tr class="bb1">
+                            <td>Huevos</td>
+                            <td>1</td>
+                            <td>2€</td>
+                            <td>2€</td>
+                            <td><button>borrar</button></td>
+                        </tr>
+                        <tr class="bb1">
+                            <td>Patatas</td>
+                            <td>1</td>
+                            <td>3€</td>
+                            <td>3€</td>
+                            <td><button>borrar</button></td>
+                        </tr>
+                        <tr class="bb1">
+                            <td>Cebollas</td>
+                            <td>2</td>
+                            <td>1€</td>
+                            <td>2€</td>
+                            <td><button>borrar</button></td>
+                        </tr>-->
+                    </tbody>
+                    <tfoot>
+                        <th colspan="3">TOTAL:</th>
+                        <th id="list-total">0€</th>
+                        <th></th>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <div class="right-menu">
+            <nav>
+                <ul>
+                    <li>Opción 1</li>
+                    <li>Opción 2</li>
+                    <li>Opción 3</li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+    <footer class="footer"></footer>
+</body>
+<script src="js/index.js"></script>
+</html>

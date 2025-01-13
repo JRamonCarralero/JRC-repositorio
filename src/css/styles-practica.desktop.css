@@ -1,0 +1,14 @@
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.main-content {
+    grid-column: span 1;
+}
+
+.right-menu {
+    margin-top: 0;
+    grid-column: 2 / 3;
+}
