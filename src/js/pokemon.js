@@ -63,7 +63,7 @@ function searchPokemon() {
 
 /**
  * function drawPokemons
- * Draw the list of Pokemons
+ * Draw Pokemons list
  * @param {Array} pok 
  * pok is a pokemons object's array
  */
