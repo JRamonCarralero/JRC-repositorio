@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="css/pokemon.css">
+    <script src="js/pokemon.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="pokedex.index.html" class="blue">Pokedex</a></li>
+                <li><a href="coleccion.pokedex.html" class="l-red">Colección</a></li>
+                <li><a href="mapa.pokedex.html" class="l-green">Mapa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <h1>Pokédex</h1>
+        <!-- formulario -->
+        <form action="#">
+            <div>
+                <fieldset>
+                    <label for="search">Nombre o número</label>
+                    <input type="text" id="search" name="search" />
+                </fieldset>
+                <button type="button" onclick="searchPokemon()">&#x1F50D;&#xfe0e;</button>
+            </div>
+            <div>
+                <p>Busca un Pokémon por su nombre o usando su número de la Pokédex Nacional</p>
+            </div>
+        </form>
+        <!-- lista -->
+        <div class="list-container">
+            <ul id="list"></ul>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

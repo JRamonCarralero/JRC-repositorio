@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="css/styles-practica.desktop.css" media="screen and (min-width: 769px)">
 </head>
 <body>
+    <!-- header -->
     <header class="main-hdr">
         <h1>Lista de la compra</h1>
     </header>
+    <!-- main -->
     <main class="main-container">
+        <!-- main content -->
         <div class="main-content">
+            <!-- form -->
             <div class="form-container">
                 <fieldset>
                     <legend>Añadir a la lista</legend>
@@ -30,6 +34,7 @@
                     </form>
                 </fieldset>
             </div>
+            <!-- table with shopping list-->
             <div class="list-container">
                 <table id="list-table" class="list-table">
                     <thead>
@@ -42,36 +47,16 @@
                         </tr>
                     </thead>
                     <tbody id="list-tbody">
-                        <!--<tr class="bb1">
-                            <td>Huevos</td>
-                            <td>1</td>
-                            <td>2€</td>
-                            <td>2€</td>
-                            <td><button>borrar</button></td>
-                        </tr>
-                        <tr class="bb1">
-                            <td>Patatas</td>
-                            <td>1</td>
-                            <td>3€</td>
-                            <td>3€</td>
-                            <td><button>borrar</button></td>
-                        </tr>
-                        <tr class="bb1">
-                            <td>Cebollas</td>
-                            <td>2</td>
-                            <td>1€</td>
-                            <td>2€</td>
-                            <td><button>borrar</button></td>
-                        </tr>-->
                     </tbody>
                     <tfoot>
                         <th colspan="3">TOTAL:</th>
-                        <th id="list-total">0€</th>
+                        <th id="list-total">0 €</th>
                         <th></th>
                     </tfoot>
                 </table>
             </div>
         </div>
+        <!-- right menu -->
         <div class="right-menu">
             <nav>
                 <ul>
@@ -82,6 +67,7 @@
             </nav>
         </div>
     </main>
+    <!-- footer -->
     <footer class="footer"></footer>
 </body>
 <script src="js/index.js"></script>

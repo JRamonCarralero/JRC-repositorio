@@ -81,11 +81,11 @@ button {
 }
 
 table tbody tr:nth-child(odd) {
-    background-color: #ebeaea;
+    background-color: #f3f3f3;
 }
 
 .right-menu {
-    border: 1px solid red;
+    border: 1px solid black;
     border-radius: 15px;
     padding: 5px 15px;
     display: flex;

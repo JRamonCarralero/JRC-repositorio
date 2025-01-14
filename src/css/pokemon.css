@@ -1,0 +1,206 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    width: 100%;
+    ul {
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        li {
+            flex-grow: 1;
+            a {
+                display: block;
+                color: white;
+                text-shadow: 2px 1px black;
+                line-height: 2.5em;
+                font-size: 1.1em;
+            }
+            
+        }
+    }
+}
+
+.blue {
+    background-color: blue;
+    border-bottom: 2px solid blue;
+}
+
+.l-blue {
+    background-color: rgb(161, 207, 250);
+    border-bottom: 2px solid blue;
+    &:hover {
+        background-color: blue;
+    }
+}
+
+.red {
+    background-color:red;
+    border-bottom: 2px solid red;
+}
+
+.l-red {
+    background-color: rgb(255, 204, 204);
+    border-bottom: 2px solid red;
+    &:hover {
+        background-color: red;
+    }
+}
+
+.green {
+    background-color:green;
+    border-bottom: 2px solid green;
+}
+
+.l-green {
+    background-color: rgb(193, 252, 193);
+    border-bottom: 2px solid green;
+    &:hover {
+        background-color: green;
+    }
+}
+
+/* MAIN */
+main {
+    margin-top: 10px;
+}
+
+h1 {
+    margin-left: 50px;
+    color: grey;
+}
+
+/* FORMULARIO */
+form {
+    width: 100%;
+    min-width: 400px;
+    margin: 10px auto;
+    background: #313131;
+    color: white;
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    div {
+        display: flex;
+        align-items: end;
+        padding: 15px 0;
+        margin-bottom: 25px;;
+        fieldset {
+            width: 65%;
+            label {
+                font-size: 1.3em;
+            }
+            input {
+                margin-top: 5px;
+                width: 100%;
+                padding: 2px;
+                font-size: 1.4em;
+                border-radius: 5px;
+            }
+        }
+        button {
+            background-color: #ee6b2f;
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            border-radius: 8px;
+            color: white;
+            font-size: 1.2em;
+        }
+        p {
+            background: #4dad5b;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-size: 1.3em;
+        }
+    }
+    
+}
+
+/* LISTA */
+.list-container {
+    width: 85%;
+    min-width: 400px;
+    max-width: 1000px;
+    margin: 25px auto 0 auto;
+    padding: 10px;
+}
+
+#list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    h3 {
+        margin: 8px 0 4px 0;
+    }
+    span {
+        padding: 3px;
+        margin-right: 3px;
+        border-radius: 5px;
+    }
+}
+
+/* BG DE LOS TIPOS */
+.planta {
+    background-color: rgb(119, 180, 119);
+}
+
+.veneno {
+    background-color: rgb(145, 107, 145);
+    color: white;
+}
+
+.bicho {
+    background-color: rgb(93, 116, 95);
+    color: white;
+}
+
+.normal {
+    background-color: gray;
+    color: white;
+}
+
+.volador {
+    background: linear-gradient(0deg, rgb(212, 212, 212) 0 50%, rgb(80, 250, 236) 50% 100%);
+}
+
+/* MEDIA */
+@media screen and (max-width: 768px) {
+    #list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    #list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #list {
+        grid-template-columns: 1fr;
+    }
+}
