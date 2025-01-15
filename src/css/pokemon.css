@@ -9,8 +9,6 @@
 /* HEADER */
 header {
     width: 100%;
-    position: fixed;
-    top: 0;
 }
 
 a {
@@ -81,7 +79,7 @@ nav {
 
 /* MAIN */
 main {
-    margin-top: 55px;
+    margin-top: 10px;
 }
 
 h1 {
@@ -99,6 +97,8 @@ form {
     padding: 0 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    position: sticky;
+    top: 0;
     div {
         display: flex;
         align-items: end;
