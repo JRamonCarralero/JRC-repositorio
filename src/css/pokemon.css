@@ -126,6 +126,7 @@ form {
         }
         p {
             background: #4dad5b;
+            height: 100%;
             padding: 5px 15px;
             border-radius: 5px;
             font-size: 1.3em;
@@ -136,7 +137,7 @@ form {
 
 /* LISTA */
 .list-container {
-    width: 85%;
+    width: 95%;
     min-width: 400px;
     max-width: 1000px;
     margin: 25px auto 0 auto;
@@ -148,49 +149,146 @@ form {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    .card {
+        margin: 0 auto;
+        max-width: 200px;
+        img {
+            max-width: 100%;
+            padding: 7px;
+            background-color: #dddedf;
+            border-radius: 5px;
+            &:hover {
+                margin-top: -10px;
+                cursor: pointer;
+            }
+        }
+    }
+    p {
+        color: rgb(139, 139, 139);
+        font-weight: 500;
+        font-size: .9em;
+    }
     h3 {
-        margin: 8px 0 6px 0;
+        margin: 4px 0 6px 0;
         font-size: 1.5em;
     }
+    .types {
+        display: flex;
+        justify-content: flex-start;
+        gap: 3px;
+    }
     span {
-        padding: 3px;
-        margin-right: 3px;
+        width: 85px;
+        padding: 2px 0;
+        text-align: center;
         border-radius: 5px;
     }
 }
 
 /* BG DE LOS TIPOS */
-.planta {
-    background-color: rgb(119, 180, 119);
+.grass {
+    background-color: #9bcc50;
 }
 
-.veneno {
-    background-color: rgb(145, 107, 145);
+.poison {
+    background-color: #b97fc9;
     color: white;
 }
 
-.bicho {
-    background-color: rgb(93, 116, 95);
+.bug {
+    background-color: #729f3f;
     color: white;
 }
 
 .normal {
-    background-color: gray;
+    background-color: #a4acaf;
     color: white;
 }
 
-.volador {
-    background: linear-gradient(0deg, rgb(212, 212, 212) 0 50%, rgb(80, 250, 236) 50% 100%);
+.flying {
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+}
+
+.ground {
+    background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+}
+
+.water {
+    background-color: #4592c4;
+}
+
+.electric {
+    background-color: #eed535;
+}
+
+.steel {
+    background-color: #9eb7b8;
+}
+
+.ice {
+    background-color: #51c4e7;
+}
+
+.psychic {
+    background-color: #f366b9;
+}
+
+.fighting {
+    background-color: #d56723;
+}
+
+.rock {
+    background-color: #a38c21;
+}
+
+.fairy {
+    background-color: #fdb9e9;
+}
+
+.fire {
+    background-color: #fd7d24;
+}
+
+.dragon {
+    background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+}
+
+.dark {
+    background-color: #707070;
+}
+
+.ghost {
+    background-color: #7b62a3;
+}
+
+.vm-btns {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    .show-more {
+        display: none;
+        background-color: #4dad5b;
+        color: white;
+        width: 200px;
+        height: 50px;
+        font-size: 1.3em;
+        margin: 0 auto;
+        border: 2px solid green;
+        border-radius: 5px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
 /* MEDIA */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
     #list {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 728px) {
     form {
         display: flex;
         flex-direction: column;
@@ -200,7 +298,7 @@ form {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     #list {
         grid-template-columns: 1fr;
     }

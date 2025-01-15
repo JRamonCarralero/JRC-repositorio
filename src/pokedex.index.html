@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
     <link rel="stylesheet" href="css/pokemon.css">
+    <!--<script type="module" src="js/pokemon.js"></script>-->
     <script src="js/pokemon.js"></script>
 </head>
 <body>
@@ -22,7 +23,7 @@
     <main>
         <h1>Pokédex</h1>
         <!-- formulario -->
-        <form action="#">
+        <form>
             <div>
                 <fieldset>
                     <label for="search">Nombre o número</label>
@@ -37,6 +38,9 @@
         <!-- lista -->
         <div class="list-container">
             <ul id="list"></ul>
+        </div>
+        <div class="vm-btns">
+            <button id="show-more" class="show-more" onclick="drawPokemons()">VER MAS</button>
         </div>
     </main>
     <footer></footer>
