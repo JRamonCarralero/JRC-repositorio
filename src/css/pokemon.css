@@ -149,7 +149,8 @@ form {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     h3 {
-        margin: 8px 0 4px 0;
+        margin: 8px 0 6px 0;
+        font-size: 1.5em;
     }
     span {
         padding: 3px;

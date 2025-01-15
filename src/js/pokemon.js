@@ -73,7 +73,7 @@ function drawPokemons(pok) {
     for (let i=0; i<pok.length; i++){
         let elist = document.createElement('li')
         let img = document.createElement('img')
-        img.src = 'https://placehold.co/150x150'
+        img.src = 'https://placehold.co/200x200'
         img.alt = pok[i].name
         elist.appendChild(img)
         let idText =  document.createElement('p')
