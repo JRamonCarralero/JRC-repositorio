@@ -1,3 +1,6 @@
 [submodule "JRamonCarralero"]
 	path = Prueba
 	url = https://github.com/JRamonCarralero/Prueba.git
+[submodule "pokemon"]
+	path = src/pokemon
+	url = https://github.com/fanzeyi/pokemon.json.git
