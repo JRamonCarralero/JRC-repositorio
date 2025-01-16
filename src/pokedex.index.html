@@ -6,7 +6,7 @@
     <title>Pokedex</title>
     <link rel="stylesheet" href="css/pokemon.css">
     <!--<script type="module" src="js/pokemon.js"></script>-->
-    <script src="js/pokemon.js"></script>
+    <!--<script src="js/pokemon.js"></script>-->
 </head>
 <body>
     <!-- header -->
@@ -29,7 +29,7 @@
                     <label for="search">Nombre o número</label>
                     <input type="text" id="search" name="search" />
                 </fieldset>
-                <button type="button" onclick="searchPokemon()">&#x1F50D;&#xfe0e;</button>
+                <button id="searchBtn" type="button">&#x1F50D;&#xfe0e;</button>
             </div>
             <div>
                 <p>Busca un Pokémon por su nombre o usando su número de la Pokédex Nacional</p>
@@ -40,9 +40,10 @@
             <ul id="list"></ul>
         </div>
         <div class="vm-btns">
-            <button id="show-more" class="show-more" onclick="drawPokemons()">VER MAS</button>
+            <button id="show-more" class="show-more">VER MAS</button>
         </div>
     </main>
     <footer></footer>
 </body>
+<script src="js/index.pokemon.js"></script>
 </html>

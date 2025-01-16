@@ -8,23 +8,6 @@ let pok = []
 let ini = 0
 
 /**
- * call drawPokemons when the page is load
- */
-window.onload = () => {
-    //con fetch recojo el json y le asigno su contenido al array
-    fetch('pokemon/pokedex.json')
-        .then(response => response.json())
-        .then(data => {
-            pokemons = data;
-            pok = pokemons
-            drawPokemons()
-        })
-        .catch(error => {
-            console.error('Error al obtener los datos:', error);
-          });
-}
-
-/**
  * function searchPokemon
  * Search pokemons by id or by name
  * Call drawPokemons function
@@ -106,4 +89,21 @@ function drawPokemons() {
     } else {
         document.getElementById('show-more').style.display = 'none'
     }
+}
+
+/**
+ * call drawPokemons when the page is load
+ */
+window.onload = () => {
+    //con fetch recojo el json y le asigno su contenido al array
+    fetch('pokemon/pokedex.json')
+        .then(response => response.json())
+        .then(data => {
+            pokemons = data;
+            pok = pokemons
+            drawPokemons()
+        })
+        .catch(error => {
+            console.error('Error al obtener los datos:', error);
+          });
 }

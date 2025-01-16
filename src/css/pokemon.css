@@ -37,7 +37,7 @@ nav {
         }
     }
 }
-
+/* fondo de los links del navegador */
 .blue {
     background-color: blue;
     border-bottom: 2px solid blue;
@@ -258,6 +258,7 @@ form {
 
 .dragon {
     background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    color: white;
 }
 
 .dark {
