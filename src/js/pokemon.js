@@ -38,7 +38,7 @@ function onDOMContentLoaded() {
 
 /**
  * function onFormSubmit
- * cancel submit form and call searchPokemon
+ * cancel submit form and call click event on search button
  * @param {event} e 
  */
 function onFormSubmit(e) {
@@ -62,7 +62,7 @@ function onFormSubmit(e) {
  * Call drawPokemons function
  */
 function searchPokemon() {
-    //vacio la lista
+    //vacio la lista en el html
     document.getElementById('list').innerHTML = ''
     //al ser una nueva búsqueda, pongo el valor inicial a 0
     ini = 0
