@@ -1,11 +1,26 @@
-//import pokemons from '../pokemon/pokedex.json' with { type: 'json' };
+import pokemons from '../pokemon/pokedex.json' with { type: 'json' };
 /**
  * Variables
  */
-let pokemons = []
+//let pokemons = []
 //necesito un segundo array que contenga los elementos filtrados a dibujar
-let pok = []
+let pok = pokemons
 let ini = 0
+
+//añadimos el DOMContentLoaded
+document.addEventListener('DOMContentLoaded', onDOMContentLoaded)
+
+/**
+ * function onDOMContentLoaded
+ * Add the buttons events and draw Pokemons
+ */
+function onDOMContentLoaded() {
+    const searchBtn = document.getElementById('searchBtn')
+    const showMoreBtn = document.getElementById('show-more')
+    showMoreBtn.addEventListener('click', drawPokemons)
+    searchBtn.addEventListener('click', searchPokemon)
+    drawPokemons()
+}
 
 /**
  * function searchPokemon
@@ -13,8 +28,7 @@ let ini = 0
  * Call drawPokemons function
  */
 function searchPokemon() {
-    const pList = document.getElementById('list')
-    pList.innerHTML = ''
+    document.getElementById('list').innerHTML = ''
     ini = 0
     let input = document.getElementById('search').value.toLowerCase()
     if (input === ''){
@@ -23,7 +37,6 @@ function searchPokemon() {
         if (isNaN(Number(input))) {
             //filtramos diciendo que el nombre contenga el valor del input
             pok = pokemons.filter(item => item.name.english.toLowerCase().includes(input))
-            console.log(pok)
         } else {
             //filtramos diciendo que el numero contenga el valor del input
             //convierto el numero en string cara que sea incluido
@@ -48,11 +61,15 @@ function drawPokemons() {
     //recorremos el array para pintar la lista
     for (let i=ini; i<maxShow; i++){
         let elist = document.createElement('li')
+        pList.appendChild(elist)
         let box = document.createElement('div')
         box.classList.add('card')
+        elist.appendChild(box)
         //construyo la id para la imagen
         let nId = pok[i].id.toString().padStart(3, '0')
         let img = document.createElement('img')
+        img.classList.add('imgPkmn')
+        img.id = 'pkmn-' + i
         //corrijo las rutas para las imagenes con nombre distinto
         if (nId === '662') {
             img.src = 'pokemon/images/' + nId + 'r.png'
@@ -71,16 +88,18 @@ function drawPokemons() {
         box.appendChild(nameText)
         let box2 = document.createElement('div')
         box2.classList.add('types')
-        //añado los diferentes tipos
-        pok[i].type.forEach(item => {
-            let typeText =  document.createElement('span')
-            typeText.innerText = item
-            typeText.classList.add(item.toLowerCase())
-            box2.appendChild(typeText)
-        });
         box.appendChild(box2)
-        elist.appendChild(box)
-        pList.appendChild(elist)
+        //añado los diferentes tipos
+        for (let typePok of pok[i].type) {
+            let typeText =  document.createElement('span')
+            typeText.innerText = typePok
+            typeText.classList.add(typePok.toLowerCase())
+            box2.appendChild(typeText) 
+            typeText.addEventListener('click', () => console.log(typePok))
+        }
+
+        //prueba de eventos en imagenes
+        img.addEventListener('click', () => console.log(pok[i].base))
     }
     //cambio el valor a ini para el ver mas, y lo muestro o escondo
     ini = maxShow
@@ -94,6 +113,8 @@ function drawPokemons() {
 /**
  * call drawPokemons when the page is load
  */
+
+/*   NO SE ESTA USANDO
 window.onload = () => {
     //con fetch recojo el json y le asigno su contenido al array
     fetch('pokemon/pokedex.json')
@@ -106,4 +127,9 @@ window.onload = () => {
         .catch(error => {
             console.error('Error al obtener los datos:', error);
           });
+    const searchBtn = document.getElementById('searchBtn')
+    const showMoreBtn = document.getElementById('show-more')
+    showMoreBtn.addEventListener('click', drawPokemons)
+    searchBtn.addEventListener('click', searchPokemon)
 }
+    */
