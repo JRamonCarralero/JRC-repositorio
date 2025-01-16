@@ -62,12 +62,12 @@ function onFormSubmit(e) {
  * Call drawPokemons function
  */
 function searchPokemon() {
+    //recojo el valor del input (en minuscula) y lo guardo en una variable
+    let input = document.getElementById('search').value.toLowerCase()
     //vacio la lista en el html
     document.getElementById('list').innerHTML = ''
     //al ser una nueva búsqueda, pongo el valor inicial a 0
     ini = 0
-    //recojo el valor del input (en minuscula) y lo guardo en una variable
-    let input = document.getElementById('search').value.toLowerCase()
     // si es una cadena vacía, selecciono todos los pokemons
     if (input === ''){
         pok = pokemons
@@ -100,14 +100,14 @@ function searchPokemon() {
  * Draw Pokemons list
  */
 function drawPokemons() {  
+    //recojo el elemento ul
+    const pList = document.getElementById('list')
     //indicamos el valor maximo a visualizar, en este caso 28 mas que el inicial
     let maxShow = ini + 28
     //si el último valor a mostrar es mayor que el tamaño del array, el valor maximo sera el tamaño del array
     if (pok.length < (maxShow + ini)){
         maxShow = pok.length
     }
-    //recojo el elemento ul
-    const pList = document.getElementById('list')
     //recorremos el array para pintar la lista
     //decimos que i<maxShow porque maxShow como mucho es el tamaño del array, y el último elemento es tamaño-1
     for (let i=ini; i<maxShow; i++){
