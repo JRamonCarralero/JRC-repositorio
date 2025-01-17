@@ -44,11 +44,16 @@ button {
         justify-content: space-between;
         align-items: flex-end;
         padding: 10px;
-        input {
-            padding: 3px;
-        }
-        input[type="number"] {
-            width: 70px;;
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            input {
+                padding: 3px;
+            }
+            input[type="number"] {
+                width: 75px;;
+            }
         }
     } ;
 }
@@ -68,6 +73,9 @@ button {
         border-bottom: 2px solid black;
         td {
             padding: 5px 0 3px 0;
+            button {
+                margin-right: 5px;
+            }
         }
     }
 }
@@ -84,6 +92,10 @@ table tbody tr:nth-child(odd) {
     background-color: #f3f3f3;
 }
 
+.row-blue {
+    background-color: rgb(185, 252, 189);
+}
+
 .right-menu {
     border: 1px solid black;
     border-radius: 15px;
@@ -94,6 +106,9 @@ table tbody tr:nth-child(odd) {
         list-style: none;
         li {
             margin-top: 10px;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }
